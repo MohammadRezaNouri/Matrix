@@ -26,3 +26,7 @@ Matrix::Matrix(size_t row, size_t col)
     _rowsize = row;
     _colsize = col;
 }
+
+Matrix::~Matrix()
+{
+}
