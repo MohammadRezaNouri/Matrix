@@ -50,5 +50,33 @@ int main()
             matrix2.Display();
         }
     }
+    cout << "Do you want to see a sub-matrix for matrixes?(no=0, yes=1)" << endl;
+    cin >> temp;
+    if (temp == 1)
+    {
+        cout << "Which matrix?(matrix1=1, matrix2=2, both=3, cansel=4)" << endl;
+        cin >> temp;
+        if (temp == 1)
+        {
+            cout << "Please enter four numbers to display a sub-matrix of matrix1 (row : from number one to two and col : from number three to four)" << endl;
+            cin >> T1 >> T2 >> T3 >> T4;
+            matrix1.Display(T1, T2, T3, T4);
+        }
+        if (temp == 2)
+        {
+            cout << "Please enter four numbers to display a sub-matrix of matrix2 (row : from number one to two and col : from number three to four)" << endl;
+            cin >> T1 >> T2 >> T3 >> T4;
+            matrix2.Display(T1, T2, T3, T4);
+        }
+        if (temp == 3)
+        {
+            cout << "Please enter four numbers to display a sub-matrix of matrix1 (row : from number one to two and col : from number three to four)" << endl;
+            cin >> T1 >> T2 >> T3 >> T4;
+            matrix1.Display(T1, T2, T3, T4);
+            cout << "Please enter four numbers to display a sub-matrix of matrix2 (row : from number one to two and col : from number three to four)" << endl;
+            cin >> T1 >> T2 >> T3 >> T4;
+            matrix2.Display(T1, T2, T3, T4);
+        }
+    }
     return 0;
 }
