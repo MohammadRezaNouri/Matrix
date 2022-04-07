@@ -212,5 +212,20 @@ int main()
             }
         }
     }
+    cout << "Do you want to copy Matrixes?(no=0, yes=1)" << endl;
+    cin >> temp;
+    if (temp == 1)
+    {
+        cout << "Which?(matrix1 in matrix2=1, matrix2 in matrix1=2, cansel=3)" << endl;
+        cin >> temp;
+        if (temp == 1)
+        {
+            matrix2.Copy(matrix1);
+        }
+        if (temp == 2)
+        {
+            matrix1.Copy(matrix2);
+        }
+    }
     return 0;
 }
