@@ -30,5 +30,25 @@ int main()
     matrix2.Initialize();
     cout << "Do you want to see matrixes?(n=0, yes=1)" << endl;
     cin >> temp;
+    if (temp == 1)
+    {
+        cout << "Which matrix?(matrix1=1, matrix2=2, both=3, cansel=4)" << endl;
+        cin >> temp;
+        if (temp == 1)
+        {
+            matrix1.Display();
+        }
+        if (temp == 2)
+        {
+            matrix2.Display();
+        }
+        if (temp == 3)
+        {
+            cout << "matrix1 :" << endl;
+            matrix1.Display();
+            cout << "matrix2 :" << endl;
+            matrix2.Display();
+        }
+    }
     return 0;
 }
