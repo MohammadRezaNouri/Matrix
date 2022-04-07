@@ -102,3 +102,25 @@ void Matrix::Add(Matrix MATRIX)
     else
         cout << "The cols are not equal!" << endl;
 }
+
+void Matrix::Sub(Matrix MATRIX)
+{
+    int temp;
+    if (MATRIX._rowsize == _rowsize && MATRIX._colsize == _colsize)
+    {
+        for (unsigned long int i = 0; i < _rowsize; i++)
+            for (unsigned long int j = 0; j < _colsize; j++)
+                _mtx[i][j] -= MATRIX._mtx[i][j];
+        cout << "Do you want to see the modified matrix?(no=0, yes=1)" << endl;
+        cin >> temp;
+        if (temp == 1)
+        {
+            cout << "Matrix Converted :" << endl;
+            Display();
+        }
+    }
+    else if (MATRIX._rowsize != _rowsize)
+        cout << "The rows are not equal!" << endl;
+    else
+        cout << "The cols are not equal!" << endl;
+}
