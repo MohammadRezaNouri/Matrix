@@ -33,3 +33,11 @@ void Matrix::Initialize()
         for (unsigned long int j = 0; j < _colsize; j++)
             cin >> _mtx[i][j];
 }
+
+void Matrix::Display() const
+{
+    for (unsigned long int i = 0; i < _rowsize; i++)
+        for (unsigned long int j = 0; j < _colsize; j++)
+            cout << _mtx[i][j] << "\t";
+        cout << endl;
+}
