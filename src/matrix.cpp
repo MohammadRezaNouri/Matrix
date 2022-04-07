@@ -124,3 +124,10 @@ void Matrix::Sub(Matrix MATRIX)
     else
         cout << "The cols are not equal!" << endl;
 }
+
+void Matrix::Deallocate()
+{
+    for (unsigned long int i = 0; i < _rowsize; i++)
+        delete[] _mtx[i];
+    delete[] _mtx;
+}
