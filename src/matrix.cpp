@@ -41,3 +41,11 @@ void Matrix::Display() const
             cout << _mtx[i][j] << "\t";
         cout << endl;
 }
+
+void Matrix::Display(size_t T1, size_t T2, size_t T3, size_t T4) const
+{
+    for (unsigned long int i = T1 - 1; i <= T2 - 1; i++)
+        for (unsigned long int j = T3 - 1; j <= T4 - 1; j++)
+            cout << _mtx[i][j] << "\t";
+        cout << endl;
+}
