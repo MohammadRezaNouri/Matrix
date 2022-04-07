@@ -193,3 +193,25 @@ void Matrix::Power(size_t pow)
     else
         cout << "The col are not equal row!" << endl;
 }
+
+void Matrix::Copy(Matrix MATRIX)
+{
+    if (_rowsize == MATRIX._rowsize && _colsize == MATRIX._colsize)
+    {
+        int temp;
+        for (unsigned long int i = 0; i < _rowsize; i++)
+            for (unsigned long int j = 0; j < _colsize; j++)
+                _mtx[i][j] = MATRIX._mtx[i][j];
+        cout << "Do you want to see the modified matrix?(no=0, yes=1)" << endl;
+        cin >> temp;
+        if (temp == 1)
+        {
+            cout << "Matrix Converted :" << endl;
+            Display();
+        }
+    }
+    else if (MATRIX._rowsize != _rowsize)
+        cout << "The rows are not equal!" << endl;
+    else
+        cout << "The cols are not equal!" << endl;
+}
