@@ -156,5 +156,61 @@ int main()
             matrix2.special(T1, T2, tmp);
         }
     }
+    cout << "Do you want to power Matrixes?(no=0, yes=1)" << endl;
+    cin >> temp;
+    if (temp == 1)
+    {
+        cout << "Which matrix?(matrix1=1, matrix2=2, both=3, cansel=4)" << endl;
+        cin >> temp;
+        if (temp == 1)
+        {
+            cout << "How power(integer)?" << endl;
+            cin >> T1;
+            matrix1.Power(T1);
+            cout << "Do you want to see the modified matrix?(no=0, yes=1)" << endl;
+            cin >> T2;
+            if (T2 == 1)
+            {
+                cout << "Matrix Converted :" << endl;
+                matrix1.Display();
+            }
+        }
+        if (temp == 2)
+        {
+            cout << "How power(integer)?" << endl;
+            cin >> T1;
+            matrix2.Power(T1);
+            cout << "Do you want to see the modified matrix?(no=0, yes=1)" << endl;
+            cin >> T2;
+            if (T2 == 1)
+            {
+                cout << "Matrix Converted :" << endl;
+                matrix2.Display();
+            }
+        }
+        if (temp == 3)
+        {
+            cout << "How power(integer)(matrix1)?" << endl;
+            cin >> T1;
+            matrix1.Power(T1);
+            cout << "Do you want to see the modified matrix?(no=0, yes=1)" << endl;
+            cin >> T2;
+            if (T2 == 1)
+            {
+                cout << "Matrix Converted :" << endl;
+                matrix1.Display();
+            }
+            cout << "How power(integer)(matrix2)?" << endl;
+            cin >> T1;
+            matrix2.Power(T1);
+            cout << "Do you want to see the modified matrix?(no=0, yes=1)" << endl;
+            cin >> T2;
+            if (T2 == 1)
+            {
+                cout << "Matrix Converted :" << endl;
+                matrix2.Display();
+            }
+        }
+    }
     return 0;
 }
