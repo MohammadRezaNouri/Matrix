@@ -131,3 +131,16 @@ void Matrix::Deallocate()
         delete[] _mtx[i];
     delete[] _mtx;
 }
+
+void Matrix::special(size_t row, size_t col, float number)
+{
+    int temp;
+    _mtx[row - 1][col - 1] = number;
+    cout << "Do you want to see the modified matrix?(no=0, yes=1)" << endl;
+    cin >> temp;
+    if (temp == 1)
+    {
+        cout << "Matrix Converted :" << endl;
+        Display();
+    }
+}
