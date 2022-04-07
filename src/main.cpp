@@ -98,5 +98,20 @@ int main()
             matrix2.Transposed();
         }
     }
+    cout << "Do you want to sum the matrixes?(no=0, yes=1)" << endl;
+    cin >> temp;
+    if (temp == 1)
+    {
+        cout << "Which?(matrix1+matrix2=1, matrix2+matrix1=2, cansel=3)" << endl;
+        cin >> temp;
+        if (temp == 1)
+        {
+            matrix1.Add(matrix2);
+        }
+        if (temp == 2)
+        {
+            matrix2.Add(matrix1);
+        }
+    }
     return 0;
 }
