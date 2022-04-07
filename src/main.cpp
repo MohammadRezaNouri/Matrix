@@ -227,5 +227,8 @@ int main()
             matrix1.Copy(matrix2);
         }
     }
+    matrix1.Deallocate();
+    matrix2.Deallocate();
+    cout << "Bye Bye" << endl;
     return 0;
 }
