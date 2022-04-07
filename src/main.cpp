@@ -128,5 +128,33 @@ int main()
             matrix2.Sub(matrix1);
         }
     }
+    cout << "Do you want to change special element of matirxes?(no=0, yes=1)" << endl;
+    cin >> temp;
+    if (temp == 1)
+    {
+        cout << "Which matrix?(matrix1=1, matrix2=2, both=3, cansel=4)" << endl;
+        cin >> temp;
+        if (temp == 1)
+        {
+            cout << "Please enter the location of element and enter the number for change :" << endl;
+            cin >> T1 >> T2 >> tmp;
+            matrix1.special(T1, T2, tmp);
+        }
+        if (temp == 2)
+        {
+            cout << "Please enter the location of element and enter the number for change :" << endl;
+            cin >> T1 >> T2 >> tmp;
+            matrix2.special(T1, T2, tmp);
+        }
+        if (temp == 3)
+        {
+            cout << "Please enter the location of element and enter the number for change for matrix1 :" << endl;
+            cin >> T1 >> T2 >> tmp;
+            matrix1.special(T1, T2, tmp);
+            cout << "Please enter the location of element and enter the number for change for matrix2 :" << endl;
+            cin >> T1 >> T2 >> tmp;
+            matrix2.special(T1, T2, tmp);
+        }
+    }
     return 0;
 }
