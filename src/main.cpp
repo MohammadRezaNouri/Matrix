@@ -78,5 +78,25 @@ int main()
             matrix2.Display(T1, T2, T3, T4);
         }
     }
+    cout << "Do you want to convert matrixes to transcriot?(no=0, yes=1)" << endl;
+    cin >> temp;
+    if (temp == 1)
+    {
+        cout << "Which matrix?(matrix1=1, matrix2=2, both=3, cansel=4)" << endl;
+        cin >> temp;
+        if (temp == 1)
+        {
+            matrix1.Transposed();
+        }
+        if (temp == 2)
+        {
+            matrix2.Transposed();
+        }
+        if (temp == 3)
+        {
+            matrix1.Transposed();
+            matrix2.Transposed();
+        }
+    }
     return 0;
 }
