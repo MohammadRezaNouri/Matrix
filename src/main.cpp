@@ -35,13 +35,9 @@ int main()
         cout << "Which matrix?(matrix1=1, matrix2=2, both=3, cansel=4)" << endl;
         cin >> temp;
         if (temp == 1)
-        {
             matrix1.Display();
-        }
         if (temp == 2)
-        {
             matrix2.Display();
-        }
         if (temp == 3)
         {
             cout << "matrix1 :" << endl;
@@ -85,13 +81,9 @@ int main()
         cout << "Which matrix?(matrix1=1, matrix2=2, both=3, cansel=4)" << endl;
         cin >> temp;
         if (temp == 1)
-        {
             matrix1.Transposed();
-        }
         if (temp == 2)
-        {
             matrix2.Transposed();
-        }
         if (temp == 3)
         {
             matrix1.Transposed();
@@ -105,13 +97,9 @@ int main()
         cout << "Which?(matrix1+matrix2=1, matrix2+matrix1=2, cansel=3)" << endl;
         cin >> temp;
         if (temp == 1)
-        {
             matrix1.Add(matrix2);
-        }
         if (temp == 2)
-        {
             matrix2.Add(matrix1);
-        }
     }
     cout << "Do you want to Negative the matrixes?(no=0, yes=1)" << endl;
     cin >> temp;
@@ -120,13 +108,9 @@ int main()
         cout << "Which?(matrix1-matrix2=1, matrix2-matrix1=2, cansel=3)" << endl;
         cin >> temp;
         if (temp == 1)
-        {
             matrix1.Sub(matrix2);
-        }
         if (temp == 2)
-        {
             matrix2.Sub(matrix1);
-        }
     }
     cout << "Do you want to change special element of matirxes?(no=0, yes=1)" << endl;
     cin >> temp;
@@ -219,13 +203,9 @@ int main()
         cout << "Which?(matrix1 in matrix2=1, matrix2 in matrix1=2, cansel=3)" << endl;
         cin >> temp;
         if (temp == 1)
-        {
             matrix2.Copy(matrix1);
-        }
         if (temp == 2)
-        {
             matrix1.Copy(matrix2);
-        }
     }
     matrix1.Deallocate();
     matrix2.Deallocate();
