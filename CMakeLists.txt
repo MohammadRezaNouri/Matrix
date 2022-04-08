@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.0)
+project(Matrix)
+set(CMAKE_CXX_STANDARD 11)
+include_directories(includes)
+add_executable(app src/main.cpp src/matrix.cpp) 
